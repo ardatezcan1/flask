@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>Dublicate Remove</h3>
+<small>Welcome, {{session["username"]}}</small>
+<hr>
+{% from "includes/formhelpers.html" import render_field %}
+<form method=post>
+  <button type="submit" class="btn btn-danger">Sil</button>
+</form>
+
+{% endblock body %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% from "includes/formhelpers.html" import render_field %}
+<h3>Bos Kisi</h3>
+<small>Welcome, {{session["username"]}}</small>
+<hr>
+<form method=post>
+  <button type="submit" class="btn btn-danger">Sil</button>
+</form>
+
+
+{% endblock body %}

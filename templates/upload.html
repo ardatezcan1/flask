@@ -1,0 +1,14 @@
+<!doctype html>
+<h2>Scrape Yükleme İçin Dosya Seçiniz</h2>
+{% from "includes/formhelpers.html" import render_field %}
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required>
+			<input type="text" name="account" required >
+			<input type="submit" value="Submit">
+		</p>
+    </dl>
+</form>
+
+

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+
+    <h3>ANT-TNA Admin Sayfasina Hosgeldiniz</h3>
+    <p>Admin sayfasinda database'i yonetebilirsiniz.
+    </p>
+</div>
+{% from "includes/formhelpers.html" import render_field %}
+<h4>Scrape Yükleme İçin Dosya Seçiniz</h4>
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required>
+            <input type="text" name="account" required >
+            <input type="submit" value="Submit">
+		</p>
+    </dl>
+</form>
+
+
+{% endblock body %}
